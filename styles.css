@@ -61,7 +61,7 @@ body {
 body {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/assets/fondo.jpg");
+    url("assets/fondo.jpg");
 
   /* Propiedades para que la imagen cubra toda la pantalla de forma perfecta */
   background-size: cover;
