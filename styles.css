@@ -2,16 +2,16 @@
 .card .carousel-inner img {
   height: 170px;
   object-fit: contain;
-  background-color: #f8f9fa;
+  background-color: whitesmoke;
   padding: 5px;
 }
 
-/* Fondo general con un degradado sutil en tonos azul agua / alberca */
+/* Fondo general con un degradado sutil en tonos azul agua / alberca 
 body {
   background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 50%, #80deea 100%);
-  background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+  background-attachment: fixed; 
   min-height: 100vh;
-}
+}*/
 
 .card {
   background-color: #ffffff;
@@ -56,4 +56,17 @@ body {
 .navbar .nav-link.active {
   font-weight: bold;
   color: #e0f7fa !important;
+}
+
+body {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/assets/fondo.jpg");
+
+  /* Propiedades para que la imagen cubra toda la pantalla de forma perfecta */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Se queda fija al hacer scroll */
+
+  min-height: 100vh;
 }
