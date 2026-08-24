@@ -1,0 +1,59 @@
+/* Altura fija y control de proporción para las imágenes dentro de las tarjetas */
+.card .carousel-inner img {
+  height: 170px;
+  object-fit: contain;
+  background-color: #f8f9fa;
+  padding: 5px;
+}
+
+/* Fondo general con un degradado sutil en tonos azul agua / alberca */
+body {
+  background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 50%, #80deea 100%);
+  background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo general para todas las tarjetas: bordes redondeados, sombra y una línea decorativa superior */
+.card {
+  background-color: #ffffff;
+  border: none; /* Quitamos el borde gris de Bootstrap */
+  border-top: 4px solid #00acc1; /* Una línea azul cian/alberca arriba */
+  box-shadow: 0 6px 12px rgba(0, 131, 143, 0.08); /* Sombra suave con tinte azulado */
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Efecto hover: la tarjeta se eleva ligeramente al pasar el mouse */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 131, 143, 0.15);
+}
+
+/* Personalización de la barra de navegación con temática de agua/alberca */
+.navbar {
+  background: linear-gradient(135deg, #006064 0%, #00838f 100%) !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Enlaces del menú se vean blancos y legibles sobre el fondo oscuro */
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #ffffff !important;
+}
+
+/* Efecto al pasar el mouse sobre los links del menú */
+.navbar .nav-link:hover {
+  color: #80deea !important;
+}
+
+/* El link activo (Home) resalta un poco más */
+.navbar .nav-link.active {
+  font-weight: bold;
+  color: #e0f7fa !important;
+}
